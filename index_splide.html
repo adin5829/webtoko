@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Produk</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="splide/splide.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-9 col-lg-10">
+				<img src="asset/logo.svg">
+			</div>
+			<div class="col-3 col-lg-2">
+				<a class="btn btn-primary" href="form_login.html" id="masuk" data-bs-toggle="modal" data-bs-target="#loginModal">
+					<i class="bi bi-box-arrow-in-right"></i> Masuk
+				</a>
+				<a class="btn btn-warning" href="daftar.html" id="daftar">
+					<i class="bi bi-person-plus"></i> Daftar
+				</a>
+				<button type="button" class="btn btn-info position-relative">
+				  <i class="bi bi-cart"></i>
+				  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="jumlah_keranjang">
+				    0			   
+				  </span>
+				</button>
+			</div>
+		</div>
+		<hr/>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="asset/banner.webp" class="d-block w-100" alt="banner">
+						</div>
+						<div class="carousel-item">
+							<img src="asset/banner2.jpg" class="d-block w-100" alt="banner">
+						</div>
+						<div class="carousel-item">
+							<img src="asset/banner3.webp" class="d-block w-100" alt="banner">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<section class="splide" aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">			
+						<div class="card">
+							<img class="card-img-top" src="asset/produk1.jpg" alt="Produk 2">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 1')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>			
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk2.jpg" alt="Produk 2">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 1')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk3.jpg" alt="Produk 3">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 2')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+
+						<div class="card">
+							<img class="card-img-top" src="asset/produk4.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 3')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk2.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 4')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk1.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 5')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk5.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 1')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk3.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 1')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="splide__slide">
+						
+						<div class="card">
+							<img class="card-img-top" src="asset/produk3.jpg" alt="Produk 4">
+							<div class="card-body">
+								<h5 class="card-title">5 Pcs Lemonilo Mie Instan Goreng Mialami</h5>
+								<p class="card-text">
+									<span class="sale">Rp 25.000</span> <br/>
+									<span class="sale-persen">10%</span> <span class="ori">Rp 50.000</span>  
+								</p>
+								<div class="card-footer">
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<a href="#" class="btn btn-primary" onclick="add_to_cart('Produk 1')">
+											<i class="bi bi-cart-plus"></i> Beli
+										</a>
+										<a href="#" class="btn btn-info">
+											<i class="bi bi-eye"></i> Detail
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Form Login</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Alamat Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">Kami tidak akan membagikan email anda kepada siapapun</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Buat saya tetap masuk</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Form Register</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Nama</label>
+							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Kota</label>
+							<select class="form-control">
+								<option>Sleman</option>
+								<option>Jogja</option>
+								<option>Bantul</option>
+								<option>Gunung Kidul</option>
+								<option>Kulon Progo</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Alamat</label>
+							<textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Alamat Lengkap"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Alamat Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">Kami tidak akan membagikan email anda kepada siapapun</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-primary">Register</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+
+	<script src="splide/splide.min.js"></script>
+
+	<script>
+		var splide = new Splide( '.splide', {
+			perPage: 5,
+			rewind : true,
+			// padding: '5rem',
+		} );
+
+		splide.mount();
+
+	</script>
+
+	<script type="text/javascript">
+		var jml_cart = document.getElementById('jumlah_keranjang');
+		var count_keranjang = 0;
+
+		function add_to_cart(nama_produk) {
+			count_keranjang++;
+			jml_cart.innerText = count_keranjang;
+
+			alert(nama_produk + ' Sudah Ditambahkan Ke keranjang');
+		}
+
+	</script>
+
+</body>
+</html>

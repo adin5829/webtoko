@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+
+	<title>Home Produk</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-9 col-lg-10">
+		    	<img src="asset/logo.svg">
+		    </div>
+		    <div class="col-3 col-lg-2">
+		    	<a class="btn btn-primary" href="form_login.html" id="masuk" data-bs-toggle="modal" data-bs-target="#loginModal">
+		    		<i class="bi bi-box-arrow-in-right"></i> Masuk
+		    	</a>
+				<a class="btn btn-warning" href="daftar.html" id="daftar">
+					<i class="bi bi-person-plus"></i> Daftar
+				</a>
+		    </div>
+		</div>
+		<hr/>
+	</div>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Form Registrasi
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Nama</label>
+						<input type="text" class="form-control" id="nama" aria-describedby="emailHelp" placeholder="Masukkan Nama" required="">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Kota</label>
+						<select class="form-control" required="">
+							<option>Sleman</option>
+							<option>Jogja</option>
+							<option>Bantul</option>
+							<option>Gunung Kidul</option>
+							<option>Kulon Progo</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Alamat</label>
+						<textarea class="form-control" id="alamat" aria-describedby="emailHelp" placeholder="Masukkan Alamat Lengkap" required=""></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Alamat Email</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required="" onchange="cekEmail()">
+
+						<small id="emailHelp" class="form-text text-muted">Kami tidak akan membagikan email anda kepada siapapun</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Password" required="" onchange="cekPass()">
+					</div>
+
+					<div class="form-group">
+						<br/>
+						<input type="submit" name="submit" value="Register" class="btn btn-primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="validation.js"></script>
+
+</body>
+</html>

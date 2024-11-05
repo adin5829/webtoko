@@ -1,0 +1,60 @@
+.header {
+	padding-top: 10px
+}
+
+hr {
+	border-width: 2px;
+}
+
+.banner {
+	text-align: center;
+	padding-bottom: 20px
+}
+
+/*.produk .col-10 {
+	background-color: pink;
+	font-family: verdana;
+
+}*/
+
+
+/*minggu 11*/
+
+.produk > .col img, .produk-detail img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+}
+
+.produk > .col .sale, .produk-detail .sale {
+	font-weight: bolder; 
+	font-size: 1.2em;
+}
+
+.produk > .col .ori, .produk-detail .ori {
+	text-decoration: line-through;
+}
+
+.produk > .col .sale-persen, .produk-detail .sale-persen {
+	padding: 5px;
+	background-color: orange;
+	border-radius: 5px;
+}
+
+
+.nav-item {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	justify-content: flex-end;
+}
+
+.produk-detail .sale {
+	font-size: 2em;
+}
+
+.produk-detail .img-detail {
+	text-align: center;
+}
